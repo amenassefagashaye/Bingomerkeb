@@ -1346,7 +1346,7 @@
         // WebSocket Connection
         function connectWebSocket() {
             const wsUrl = `ws://${window.location.hostname}:8080/ws?deviceId=${encodeURIComponent(deviceId)}`;
-            ws = new WebSocket(wsUrl);
+            ws = new WebSocket("wss://ameng-gogs-bingomerkeb-75.deno.dev");
             
             ws.onopen = () => {
                 console.log('WebSocket connected');
@@ -2710,4 +2710,5 @@
     <audio id="audioKartelaNotOurs" src="https://raw.githubusercontent.com/yourusername/bingo-audio/main/Kartela%20not%20ours_cleaned.wav" preload="auto"></audio>
     <audio id="audioWinner" src="https://raw.githubusercontent.com/yourusername/bingo-audio/main/Winner_cleaned.wav" preload="auto"></audio>
 </body>
+
 </html>
